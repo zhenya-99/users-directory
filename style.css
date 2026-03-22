@@ -1,0 +1,17 @@
+.conatiner {
+    text-align: center;
+}
+.conatiner .users-block {
+    font-size: 20px;
+}
+.conatiner .users-block button {
+    font-size: 13px;
+    padding: 8px;
+    background: rgb(218, 233, 247);
+    border: 1px solid rgb(218, 233, 247);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.conatiner .users-block button:hover {
+    background: rgb(193 208 222);
+}
