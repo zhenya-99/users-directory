@@ -1,11 +1,11 @@
-.conatiner {
+.container {
     text-align: center;
 }
-.conatiner .users-block {
+.container .users-block {
     margin-top: 20px;
     font-size: 20px;
 }
-.conatiner .users-block button {
+.container .users-block button {
     font-size: 13px;
     padding: 8px;
     background: rgb(218, 233, 247);
@@ -13,6 +13,17 @@
     border-radius: 15px;
     cursor: pointer;
 }
-.conatiner .users-block button:hover {
+.container .users-block button:hover {
     background: rgb(193 208 222);
+}
+.container .users-displayed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.container .users-displayed .user-card {
+    font-size: 15px;
+    border: 1px solid silver;
+    flex: 1 1 175px;
+    padding: 15px;
 }
