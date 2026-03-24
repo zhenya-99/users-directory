@@ -1,11 +1,15 @@
+body {
+    background-image: url("img/background.png");
+}
 .container {
     text-align: center;
 }
 .container .users-block {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 17px;
 }
-.container .users-block button {
+.container .show-btn,
+.container .back-btn {
     font-size: 13px;
     padding: 8px;
     background: rgb(218, 233, 247);
@@ -13,7 +17,8 @@
     border-radius: 15px;
     cursor: pointer;
 }
-.container .users-block button:hover {
+.container .show-btn:hover,
+.container .back-btn:hover {
     background: rgb(193 208 222);
 }
 .container .users-displayed {
@@ -22,8 +27,32 @@
     gap: 15px;
 }
 .container .users-displayed .user-card {
+    background-color: #ffffffbf;
     font-size: 15px;
     border: 1px solid silver;
     flex: 1 1 175px;
     padding: 15px;
+}
+.container .users-displayed .user-card div {
+    margin: 5px 0;
+}
+.container .users-displayed .user-card div i{
+    color: #505050;
+}
+.container .users-displayed .user-card div:nth-child(1) {
+    border-bottom: 1px solid #505050;
+    padding-bottom: 5px;
+}
+.container .users-displayed .user-card div:nth-child(even) {
+    color: #5959f7;
+}
+.container .users-displayed .user-card div:nth-child(odd) {
+    color: #505050;
+}
+.container .back-btn {
+    flex-basis: 100%;
+    width: fit-content;
+    font-size: 15px;
+    margin: 20px 0;
+    padding: 10px;
 }
