@@ -4,7 +4,7 @@ body {
 .container {
     text-align: center;
 }
-.container .users-block {
+.container .show-users {
     margin-top: 20px;
     font-size: 17px;
 }
@@ -21,16 +21,18 @@ body {
 .container .back-btn:hover {
     background: rgb(193 208 222);
 }
-.container .users-displayed {
+.container .users-displayed{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 15px;
 }
 .container .users-displayed .user-card {
+    text-align: left;
     background-color: #ffffffbf;
     font-size: 15px;
     border: 1px solid silver;
-    flex: 1 1 175px;
+    width: 200px;
     padding: 15px;
 }
 .container .users-displayed .user-card div {
@@ -50,9 +52,8 @@ body {
     color: #505050;
 }
 .container .back-btn {
-    flex-basis: 100%;
     width: fit-content;
-    font-size: 15px;
+    font-size: 18px;
     margin: 20px 0;
     padding: 10px;
 }

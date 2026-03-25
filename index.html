@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <h1>Users Directory</h1>
 
-        <div id="users-block" class="users-block">
+        <div id="show-users" class="show-users">
             Show
             <select name="users" id="users">
                 <option value="1">1</option>
@@ -27,9 +27,11 @@
                 <option value="10">10</option>
             </select>
             users
-            <button type="button" id="btn" class="show-btn">Show <i class="fa-solid fa-angle-down"></i></button>
+            <button type="button" class="show-btn" onclick="showUsers()">Show</button>
         </div>
-
+        <p id="loading"></p>
+        <div id="users-block"></div>
+        <div id="back"></div>
     </div>
 
     <script src="script.js"></script>
