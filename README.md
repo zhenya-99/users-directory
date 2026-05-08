@@ -77,8 +77,6 @@ users-directory/
 
 ---
 
----
-
 ## 👤 Author
 
 Zhenya Ghazaryan
